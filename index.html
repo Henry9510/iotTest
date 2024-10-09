@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Carros Cisterna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Monitoreo de Carros Cisterna</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Panel de Control</a></li>
+                <li><a href="#vehicles">Vehículos</a></li>
+                <li><a href="#work-orders">Órdenes de Trabajo</a></li>
+                <li><a href="#reports">Informes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Panel de Control</h2>
+            <div class="metric">
+                <h3>Estado General</h3>
+                <p>Carros en operación: <span id="operational-count">10</span></p>
+                <p>Carros fuera de servicio: <span id="inactive-count">2</span></p>
+            </div>
+        </section>
+
+        <section id="vehicles">
+            <h2>Lista de Vehículos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Modelo</th>
+                        <th>Estado</th>
+                        <th>Última Mantenimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Mercedes-Benz</td>
+                        <td>Operativo</td>
+                        <td>2024-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Volvo</td>
+                        <td>Fuera de Servicio</td>
+                        <td>2024-09-15</td>
+                    </tr>
+                    <!-- Más filas según sea necesario -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="work-orders">
+            <h2>Órdenes de Trabajo</h2>
+            <button id="new-work-order">Crear Nueva Orden de Trabajo</button>
+            <ul id="work-order-list">
+                <li>Orden #123: Mantenimiento programado para el 2024-10-10</li>
+                <li>Orden #124: Reemplazo de bomba - estado pendiente</li>
+                <!-- Más órdenes según sea necesario -->
+            </ul>
+        </section>
+
+        <section id="reports">
+            <h2>Informes</h2>
+            <button id="generate-report">Generar Informe</button>
+            <div id="report-output">
+                <!-- Aquí se generará el contenido del informe -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Monitoreo de Carros Cisterna. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
