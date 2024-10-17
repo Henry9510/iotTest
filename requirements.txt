@@ -1,0 +1,3 @@
+Flask==3.0.3
+firebase-admin==6.5.0
+# Otras dependencias que ya tienes...
